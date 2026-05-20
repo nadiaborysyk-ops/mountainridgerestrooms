@@ -1,0 +1,286 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 2.5rem 1rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    margin-bottom: -20px;
+  }
+
+  .card {
+    width: 525px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+  }
+
+  .card-front {
+    background: #2c4a35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wm { position: absolute; inset: 0; pointer-events: none; }
+
+  .front-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .front-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #f0ece4;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .front-tagline {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #C4973A;
+    margin-top: 12px;
+  }
+
+  .card-back {
+    background: #f6f3ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 38px 30px 44px;
+  }
+
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0;
+    width: 4px; height: 100%;
+    background: #2e4a32;
+  }
+
+  .back-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .back-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .top-left-content {
+    position: absolute;
+    top: 30px;
+    left: 44px;
+    right: 80px;
+  }
+
+  .services-text {
+    font-family: sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8aab8e;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .person-and-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .person-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #2e4a32;
+    line-height: 1.2;
+  }
+
+  .person-title {
+    font-family: sans-serif;
+    font-size: 9.5px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #b8952a;
+    margin-bottom: 8px;
+  }
+
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a5a3e;
+    line-height: 1;
+  }
+
+  .contact-icon {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    color: #6a9a6e;
+  }
+
+  .qr-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .qr-label {
+    font-family: sans-serif;
+    font-size: 8.5px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8aab8e;
+  }
+</style>
+
+<div class="scene">
+  <h2 class="sr-only">Mountain Ridge Restrooms business card</h2>
+
+  <span class="card-label">Front</span>
+
+  <div class="card card-front">
+    <svg class="wm" width="525" height="300" viewBox="0 0 525 300" fill="none" preserveAspectRatio="xMidYMid slice">
+      <!-- BACK range: tall, mixed sharp and rounded peaks -->
+      <path d="
+        M0,300 L0,178
+        C18,174 30,168 45,160
+        L72,142
+        C82,155 90,162 105,158
+        L130,135
+        L155,125
+        C168,118 175,122 185,118
+        L210,100
+        L238,84
+        C248,90 255,96 265,92
+        L288,78
+        L312,95
+        C322,102 330,98 342,104
+        L365,92
+        L388,100
+        C400,106 410,114 425,110
+        L452,118
+        C468,112 482,122 500,126
+        C510,128 516,123 525,121
+        L525,145
+        L525,300 Z
+      " fill="#3d6647"/>
+
+      <!-- MID range: different rhythm, fewer broader peaks, shifted left -->
+      <path d="
+        M0,300 L0,224
+        L18,214
+        C30,222 42,228 56,222
+        L74,208
+        L96,192
+        C108,200 118,194 130,186
+        L148,172
+        L166,162
+        C178,156 188,164 200,170
+        L224,182
+        C238,188 252,194 268,200
+        L292,210
+        C308,204 326,198 346,204
+        L372,214
+        C388,206 406,200 428,206
+        L454,214
+        C470,208 490,212 510,216
+        L525,214
+        L525,245
+        L525,300 Z
+      " fill="#355c3e"/>
+
+      <!-- FRONT: gentle rolling foothills -->
+      <path d="
+        M0,300 L0,268
+        C30,262 60,258 90,262
+        C120,266 150,256 180,260
+        C210,264 240,254 270,258
+        C300,262 330,252 360,256
+        C390,260 420,250 450,254
+        C480,258 500,252 525,248
+        L525,300 Z
+      " fill="#1e3523"/>
+    </svg>
+
+    <div class="front-content">
+      <div class="front-name">Mountain Ridge Restrooms</div>
+      <div class="front-tagline">Luxury Restroom Trailer Rentals</div>
+    </div>
+  </div>
+
+  <span class="card-label">Back</span>
+
+  <div class="card card-back">
+    <div class="accent-bar"></div>
+    <div class="top-left-content">
+      <div class="services-text">Weddings • Private Events • Outdoor Venues</div>
+    </div>
+    <div class="back-content">
+      <div class="back-left">
+        <div class="person-and-contact">
+          <div class="person-name">Eric Ginter</div>
+          <div class="person-title">Owner</div>
+          <div class="contact-block">
+            <div class="contact-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.66-.66a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              (802) 380-6742
+            </div>
+            <div class="contact-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@mountainridgerestrooms.com
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="qr-wrap">
+        <div class="qr-label">Scan to visit</div>
+        <div style="width: 110px; height: 110px; border: 2px dashed #8aab8e; border-radius: 4px; display: flex; align-items: center; justify-content: center; background-color: rgba(138, 171, 142, 0.05);">
+          <span style="font-size: 11px; color: #8aab8e; text-align: center; padding: 8px;">QR Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
